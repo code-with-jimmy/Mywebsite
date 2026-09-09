@@ -25,7 +25,6 @@ header{
   top: 0;
   width: 100%;
   z-index: 1000;
-  
 }
 
 header span{
@@ -37,14 +36,14 @@ header h1{
 }
 
 .click{
-  font-size: 30px;
+ font-size: 30px; 
 }
 
 #hide{
   display: none;
 }
 
-nav{
+/* nav{
   display: none;
   gap: 30px;
   width: 100%;
@@ -56,25 +55,30 @@ nav{
   padding: 10px;
   
 }
+*/  
 
-nav a{
+
+ nav a{
   text-decoration: none;
-  
-}
+  display: block; 
+   width: 100%;
+   text-align: center;
+ }
 
 
-#hide:checked ~ nav{
-  position: absolute;
+/* #hide:checked ~ nav{
+  position: fixed;
   display: flex;
   flex-direction: column;
 }
+*/
 
 
 
 
-#hide:checked ~ .backdrop {
+/* #hide:checked ~ .backdrop {
   display: block;
-}
+} 
 
 
 .backdrop {
@@ -82,8 +86,27 @@ nav a{
   position: fixed;
   inset: 0;
   
+} */
+
+
+nav{
+  display: none;
+  position: absolute;
+  top: 66.7px;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  flex-direction: column;
+  background: #fff;
+  width: 100%;
+  gap: 20px;
+  padding: 10px;
 }
 
+nav.jimmy{
+  display: block;
+  display: flex;
+}
 
 
 /* homes page */
@@ -282,6 +305,7 @@ nav a{
 .four-box{
   background: #eee4e4;
   padding: 90px 0;
+  z-index: 100;
 }
 
 
