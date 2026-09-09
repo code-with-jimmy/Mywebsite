@@ -470,7 +470,9 @@ footer{
 
   nav{
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row;
+    position: static;
+    width: auto;
   }
 
   .btn-box{
